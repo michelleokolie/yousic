@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: '/comp3350-winter2026/a01-g01-projectgroup'
+  basePath: '/https://github.com/michelleokolie/yousic/'
 }
 
 export default nextConfig
