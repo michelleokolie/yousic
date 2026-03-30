@@ -27,8 +27,13 @@ export function PostmortemSection() {
                 One Thing We Would Improve from Iteration 2
               </h3>
               <p className="text-white/90 text-lg leading-relaxed">
-                [Describe one specific aspect of Iteration 2 that you would improve. 
-                Be specific about what the issue was and how you would approach it differently.]
+                [One specific aspect of this iteration we needed to  improve was our project scheduling and time
+                estimation. Because this iteration involved our most significant growth, we underestimated
+                how long the implementation would take. This later resulted in team conflict and submission
+                anxiety. To resolve this, the HighSchoolMusical group implemented strict internal milestones
+                before deadline. Additionally, the team broke down future large features down to smaller
+                feasible tasks that can be approached/tackled by other team members. As evidence, in iteration 3, the
+                team submitted all project related deliverables days ahead of the deadline.]
               </p>
             </div>
           </div>
