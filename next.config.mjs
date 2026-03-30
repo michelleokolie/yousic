@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: '/https://github.com/michelleokolie/yousic'
+  basePath: '/yousic'
 }
 
 export default nextConfig
