@@ -4,56 +4,49 @@ import { Github, Linkedin, FolderCode, Mail, Code, ClipboardCheck, Smartphone, P
 import { ScrollReveal } from "./scroll-reveal"
 
 const teamMembers = [
-  {
+   {
     name: "Tife Adegoke",
     role: "Documentation Lead",
     contributions: [
-      "Took meeting minutes",
-      "Implemented search feature",
+
+      "ReadMe and Iteration Documents",
+      "Log out and Log out confirmation UI",
+      "Search logic and Search UI",
+      "Integration tests",
     ],
-    skills: ["Kotlin", "REST APIs", "Leadership"],
-    icon: BookMarkedIcon,
-    github: "#",
-    linkedin: "#",
+
   },
   {
     name: "Alvin Elendu",
     role: "Repository Manager",
     contributions: [
-      "Designed UI components",
-      "Created responsive layouts",
-      "Music player interface",
+      "Audio playback features",
+      "Playlist management system",
+      "Implemented user authentication",
+      "Queue controls implementation",
     ],
-    skills: ["Android UI", "Material Design", "XML"],
-    icon: FolderCode,
-    github: "#",
-    linkedin: "#",
+
   },
   {
     name: "Michelle Okolie",
     role: "Technical Lead",
     contributions: [
-      "Designed database schema",
+      "Music player logic functionality",
       "Implemented persistence layer",
-      "Playlist management system",
+      "Made the user stats feature",
+      "Created branching strategy and delegated refactoring",
     ],
-    skills: ["SQLite", "Room", "Data Modeling"],
-    icon: Code,
-    github: "#",
-    linkedin: "#",
   },
   {
     name: "Richard Shalchi",
     role: "Project Coordinator",
     contributions: [
-      "Designed the UI",
-      "Upload functionality",
-      "Created all supplementary writeups",
+      "created the now playing and library UI",
+      "Designed Library and mini-player components",
+      "added the user upload feature",
+      "wrote all worksheets for reflection",
     ],
-    skills: ["MediaPlayer API", "File I/O", "Services"],
-    icon: ClipboardCheck,
-    github: "#",
-    linkedin: "#",
+
   },
 ]
 
