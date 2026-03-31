@@ -1,71 +1,57 @@
 "use client"
 
-import { Github, Linkedin, Mail, Code, Database, Smartphone, Palette, TestTube } from "lucide-react"
+import { Github, Linkedin, FolderCode, Mail, Code, ClipboardCheck, Smartphone, Palette, BookMarkedIcon } from "lucide-react"
 import { ScrollReveal } from "./scroll-reveal"
 
 const teamMembers = [
   {
-    name: "Team Member 1",
-    role: "Project Lead / Backend",
+    name: "Tife Adegoke",
+    role: "Documentation Lead",
     contributions: [
-      "Led project planning and coordination",
-      "Implemented user authentication",
-      "Developed REST API endpoints",
+      "Took meeting minutes",
+      "Implemented search feature",
     ],
     skills: ["Kotlin", "REST APIs", "Leadership"],
-    icon: Code,
+    icon: BookMarkedIcon,
     github: "#",
     linkedin: "#",
   },
   {
-    name: "Team Member 2",
-    role: "Frontend Developer",
+    name: "Alvin Elendu",
+    role: "Repository Manager",
     contributions: [
       "Designed UI components",
       "Created responsive layouts",
       "Music player interface",
     ],
     skills: ["Android UI", "Material Design", "XML"],
-    icon: Palette,
+    icon: FolderCode,
     github: "#",
     linkedin: "#",
   },
   {
-    name: "Team Member 3",
-    role: "Database Developer",
+    name: "Michelle Okolie",
+    role: "Technical Lead",
     contributions: [
       "Designed database schema",
       "Implemented persistence layer",
       "Playlist management system",
     ],
     skills: ["SQLite", "Room", "Data Modeling"],
-    icon: Database,
+    icon: Code,
     github: "#",
     linkedin: "#",
   },
   {
-    name: "Team Member 4",
-    role: "Mobile Developer",
+    name: "Richard Shalchi",
+    role: "Project Coordinator",
     contributions: [
-      "Audio playback features",
+      "Designed the UI",
       "Upload functionality",
-      "Media controls integration",
+      "Created all supplementary writeups",
     ],
     skills: ["MediaPlayer API", "File I/O", "Services"],
-    icon: Smartphone,
-    github: "#",
-    linkedin: "#",
-  },
-  {
-    name: "Team Member 5",
-    role: "QA / Testing Lead",
-    contributions: [
-      "Unit and integration tests",
-      "Manual testing",
-      "Test documentation",
-    ],
-    skills: ["JUnit", "Espresso", "TDD"],
-    icon: TestTube,
+    icon: ClipboardCheck,
     github: "#",
     linkedin: "#",
   },
