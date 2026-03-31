@@ -27,11 +27,11 @@ export function PostmortemSection() {
                 One Thing We Would Improve from Iteration 2
               </h3>
               <p className="text-white/90 text-lg leading-relaxed">
-                [One specific aspect of this iteration we needed to  improve was our project scheduling and time
+                [One specific aspect of this iteration we needed to improve was our project scheduling and time
                 estimation. Because this iteration involved our most significant growth, we underestimated
                 how long the implementation would take. This later resulted in team conflict and submission
                 anxiety. To resolve this, the HighSchoolMusical group implemented strict internal milestones
-                before deadline. Additionally, the team broke down future large features down to smaller
+                before deadline. Additionally, the team broke down future large features into smaller
                 feasible tasks that can be approached/tackled by other team members. As evidence, in iteration 3, the
                 team submitted all project related deliverables days ahead of the deadline.]
               </p>
@@ -101,7 +101,7 @@ export function PostmortemSection() {
               <Code2 className="w-8 h-8 text-[#22577A] dark:text-[#57CC99] mx-auto mb-3" />
               <h4 className="font-heading font-semibold text-foreground mb-2">Project Size</h4>
               <p className="text-muted-foreground text-sm">
-                [Lines of code, files, classes]
+                [ ~7000 Lines of code, ~135 files,~73 core classes]
               </p>
             </div>
           </ScrollReveal>
@@ -111,7 +111,7 @@ export function PostmortemSection() {
               <Clock className="w-8 h-8 text-[#22577A] dark:text-[#57CC99] mx-auto mb-3" />
               <h4 className="font-heading font-semibold text-foreground mb-2">Time Distribution</h4>
               <p className="text-muted-foreground text-sm">
-                [Coding, testing, design, meetings]
+                [ ~50% implementation, ~30% refactor/testing, ~10% design, ~10% meetings]
               </p>
             </div>
           </ScrollReveal>
@@ -121,7 +121,7 @@ export function PostmortemSection() {
               <AlertTriangle className="w-8 h-8 text-[#22577A] dark:text-[#57CC99] mx-auto mb-3" />
               <h4 className="font-heading font-semibold text-foreground mb-2">Technical Debt</h4>
               <p className="text-muted-foreground text-sm">
-                [Areas needing refactoring]
+                [Architectural Realignment, Authentication Redesign, Decoupling & Boundaries, Scope Optimization]
               </p>
             </div>
           </ScrollReveal>
