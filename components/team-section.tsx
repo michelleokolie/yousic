@@ -4,38 +4,45 @@ import { Github, Linkedin, FolderCode, Mail, Code, ClipboardCheck, Smartphone, P
 import { ScrollReveal } from "./scroll-reveal"
 
 const teamMembers = [
-  {
+   {
     name: "Tife Adegoke",
     role: "Documentation Lead",
     contributions: [
-      "Took meeting minutes",
-      "Implemented search feature",
+
+      "Wrote the ReadMe and Iteration Documents",
+      "Added the Log out logic and Log out confirmation UI",
+      "Implemented the Search logic and Search UI",
+      "Created the Integration tests",
     ],
+
     skills: ["Kotlin", "REST APIs", "Leadership"],
     icon: BookMarkedIcon,
     github: "#",
     linkedin: "#",
+
   },
   {
     name: "Alvin Elendu",
     role: "Repository Manager",
     contributions: [
-      "Designed UI components",
-      "Created responsive layouts",
-      "Music player interface",
+      "Created the Playlist management system",
+      "Implemented user authentication",
+      "Added the Queue controls system",
     ],
     skills: ["Android UI", "Material Design", "XML"],
     icon: FolderCode,
     github: "#",
     linkedin: "#",
+
   },
   {
     name: "Michelle Okolie",
     role: "Technical Lead",
     contributions: [
-      "Designed database schema",
+      "Added the Music player logic functionality",
       "Implemented persistence layer",
-      "Playlist management system",
+      "Made the user stats feature",
+      "Created branching strategy and delegated refactoring",
     ],
     skills: ["SQLite", "Room", "Data Modeling"],
     icon: Code,
@@ -46,9 +53,10 @@ const teamMembers = [
     name: "Richard Shalchi",
     role: "Project Coordinator",
     contributions: [
-      "Designed the UI",
-      "Upload functionality",
-      "Created all supplementary writeups",
+      "Created the now playing and library UI",
+      "Designed Library and mini-player components",
+      "Added the user upload feature",
+      "Wrote all worksheets for reflection",
     ],
     skills: ["MediaPlayer API", "File I/O", "Services"],
     icon: ClipboardCheck,
