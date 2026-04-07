@@ -52,6 +52,7 @@ export function PostmortemSection() {
                   "Team collaboration and communication",
                   "Clear division of responsibilities",
                   "Consistent use of version control",
+                  "Robust state management with dedicated Manager classes",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="w-2 h-2 rounded-full bg-[#57CC99] mt-2 shrink-0" />
@@ -73,6 +74,7 @@ export function PostmortemSection() {
                   "Underestimated time for certain features",
                   "Some integration challenges",
                   "Testing coverage could be better",
+                  "Higher-than-expected overhead for UI/Infrastructure coupling",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="w-2 h-2 rounded-full bg-red-500 mt-2 shrink-0" />
@@ -91,7 +93,7 @@ export function PostmortemSection() {
               <Layers className="w-8 h-8 text-[#22577A] dark:text-[#57CC99] mx-auto mb-3" />
               <h4 className="font-heading font-semibold text-foreground mb-2">Architecture</h4>
               <p className="text-muted-foreground text-sm">
-                MVVM, Clean Architecture, etc.
+                Layered N-Tier (Persistence, Business, Presentation)
               </p>
             </div>
           </ScrollReveal>
@@ -121,7 +123,7 @@ export function PostmortemSection() {
               <AlertTriangle className="w-8 h-8 text-[#22577A] dark:text-[#57CC99] mx-auto mb-3" />
               <h4 className="font-heading font-semibold text-foreground mb-2">Technical Debt</h4>
               <p className="text-muted-foreground text-sm">
-                Architectural Realignment, Authentication Redesign, Decoupling & Boundaries, Scope Optimization
+                Data Mapper Optimization, Logic Decoupling, Infrastructure Abstraction
               </p>
             </div>
           </ScrollReveal>
