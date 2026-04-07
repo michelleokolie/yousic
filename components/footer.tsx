@@ -67,7 +67,7 @@ export function Footer() {
                 </li>
                 <li>
                   <span className="text-white/50">Term:</span>{" "}
-                  <span>Winter 2025</span>
+                  <span>Winter 2026</span>
                 </li>
                 <li>
                   <span className="text-white/50">University:</span>{" "}
