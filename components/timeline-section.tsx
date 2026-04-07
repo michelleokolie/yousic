@@ -6,7 +6,7 @@ import { CheckCircle2, Code2, Rocket, Users, Lightbulb, Bug } from "lucide-react
 const timelineEvents = [
   {
     iteration: "Iteration 1",
-    date: "Jan - Feb 2025",
+    date: "Jan - Feb 2026",
     title: "Foundation & Core Features",
     description: "Set up project architecture, implemented user authentication, and built the basic music library management system.",
     icon: Code2,
@@ -15,7 +15,7 @@ const timelineEvents = [
   },
   {
     iteration: "Iteration 2",
-    date: "Feb - Mar 2025",
+    date: "Feb - Mar 2026",
     title: "Audio Playback & Statistics",
     description: "Integrated audio playback functionality, and implemented custom playlists",
     icon: Rocket,
@@ -24,7 +24,7 @@ const timelineEvents = [
   },
   {
     iteration: "Iteration 3",
-    date: "Mar - Apr 2025",
+    date: "Mar - Apr 2026",
     title: "Polish & Final Features",
     description: "Refined UI/UX, added user dashboard, implemented search functionality, added custom upload feature, and implemented listening statistics",
     icon: Users,
@@ -116,7 +116,7 @@ export function TimelineSection() {
                 <p className="font-[family-name:var(--font-heading)] text-lg font-semibold text-[#22577A] dark:text-[#80ED99]">
                   Project Complete
                 </p>
-                <p className="text-sm text-muted-foreground">April 2025</p>
+                <p className="text-sm text-muted-foreground">April 2026</p>
               </div>
             </div>
           </ScrollReveal>
