@@ -43,7 +43,7 @@ const teamMembers = [
       "Facilitated team meetings and technical sprint planning",
       "Architected the foundational logic and core system functionality",
     ],
-    skills: ["System Architecture", "SQLite", "Data Modeling", "System Logiv"],
+    skills: ["System Architecture", "SQLite", "Data Modeling", "System Logic"],
     icon: Code,
     github: "https://code.cs.umanitoba.ca/okoliem",
   },
