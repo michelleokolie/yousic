@@ -17,18 +17,18 @@ const timelineEvents = [
     iteration: "Iteration 2",
     date: "Feb - Mar 2025",
     title: "Audio Playback & Statistics",
-    description: "Integrated audio playback functionality, implemented listening statistics tracking, and added the profile dashboard.",
+    description: "Integrated audio playback functionality, and implemented custom playlists",
     icon: Rocket,
-    highlights: ["Audio player integration", "Stats tracking", "Profile dashboard"],
+    highlights: ["Audio player integration", "Playlist features",],
     status: "completed",
   },
   {
     iteration: "Iteration 3",
     date: "Mar - Apr 2025",
     title: "Polish & Final Features",
-    description: "Refined UI/UX, added playlist management, implemented search functionality, and conducted user testing.",
+    description: "Refined UI/UX, added user dashboard, implemented search functionality, added custom upload feature, and implemented listening statistics",
     icon: Users,
-    highlights: ["Playlist features", "Search & filters", "User testing"],
+    highlights: ["Stats tracking", "Search & filters", "Custom audio uploads"],
     status: "completed",
   },
 ]
@@ -50,7 +50,7 @@ export function TimelineSection() {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#22577A] via-[#38A3A5] to-[#57CC99] dark:from-[#80ED99] dark:via-[#57CC99] dark:to-[#38A3A5]" />
+          <div className="absolute left-8 md:left-1/2 top-0 h-[calc(100%-4rem)] w-0.5 bg-gradient-to-b from-[#22577A] via-[#38A3A5] to-[#57CC99] dark:from-[#80ED99] dark:via-[#57CC99] dark:to-[#38A3A5]" />
 
           {timelineEvents.map((event, index) => {
             const Icon = event.icon
