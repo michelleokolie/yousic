@@ -131,8 +131,9 @@ export function PostmortemSection() {
 
         {/* Lessons Learned & If Starting Over */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+          {/* Box 1: Lessons Learned */}
           <ScrollReveal delay={800}>
-            <div className="bg-secondary/50 dark:bg-secondary/20 rounded-2xl p-8">
+            <div className="bg-secondary/40 dark:bg-secondary/10 rounded-2xl p-8 border border-border/50 h-full">
               <h3 className="font-heading text-xl font-bold text-foreground mb-6 flex items-center gap-3">
                 <Lightbulb className="w-6 h-6 text-[#38A3A5]" />
                 Lessons Learned
@@ -152,8 +153,9 @@ export function PostmortemSection() {
             </div>
           </ScrollReveal>
 
+          {/* Box 2: If We Started Over */}
           <ScrollReveal delay={900}>
-            <div className="bg-secondary/50 dark:bg-secondary/20 rounded-2xl p-8">
+            <div className="bg-secondary/40 dark:bg-secondary/10 rounded-2xl p-8 border border-border/50 h-full">
               <h3 className="font-heading text-xl font-bold text-foreground mb-6 flex items-center gap-3">
                 <RotateCcw className="w-6 h-6 text-[#38A3A5]" />
                 If We Started Over
@@ -183,16 +185,9 @@ export function PostmortemSection() {
               </h3>
               <div className="flex flex-wrap justify-center gap-3">
                 {[
-                  "User Stories",
-                  "Acceptance Tests",
-                  "Unit Testing",
-                  "Integration Testing",
-                  "Code Reviews",
-                  "Agile/Scrum",
-                  "Version Control",
-                  "Project Management",
-                  "Design Patterns",
-                  "SOLID Principles",
+                  "User Stories", "Acceptance Tests", "Unit Testing", "Integration Testing",
+                  "Code Reviews", "Agile/Scrum", "Version Control", "Project Management",
+                  "Design Patterns", "SOLID Principles",
                 ].map((technique) => (
                   <span
                     key={technique}
