@@ -82,7 +82,7 @@ export function HeroSection() {
                 </div>
                 <div className="text-center">
                   <div className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#22577A] dark:text-[#80ED99]">
-                    <AnimatedCounter end={5} />
+                    <AnimatedCounter end={4} />
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">Team Members</p>
                 </div>
