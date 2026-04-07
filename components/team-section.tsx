@@ -137,20 +137,6 @@ export function TeamSection() {
                   >
                     <Github className="w-5 h-5" />
                   </a>
-                  <a
-                    href={member.linkedin}
-                    className="text-muted-foreground hover:text-[#22577A] dark:hover:text-[#57CC99] transition-colors"
-                    aria-label={`${member.name}'s LinkedIn`}
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-muted-foreground hover:text-[#22577A] dark:hover:text-[#57CC99] transition-colors"
-                    aria-label={`Email ${member.name}`}
-                  >
-                    <Mail className="w-5 h-5" />
-                  </a>
                 </div>
               </div>
             </ScrollReveal>
