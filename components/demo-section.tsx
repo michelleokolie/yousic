@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { Play, ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import { ScrollReveal } from "@/components/scroll-reveal"
+import { Play, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function DemoSection() {
   return (
@@ -20,28 +20,18 @@ export function DemoSection() {
           </div>
         </ScrollReveal>
 
-        {/* Video Placeholder */}
+        {/* Video Section */}
         <ScrollReveal variant="zoom-in" delay={100}>
           <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card">
-            <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-secondary to-secondary/50 dark:from-[#1a4057] dark:to-[#22577A]">
-              <div className="text-center p-8">
-                <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-[#22577A] dark:bg-[#80ED99] shadow-lg transition-transform duration-300 hover:scale-110 cursor-pointer">
-                  <Play className="h-10 w-10 text-white dark:text-[#22577A] ml-1" />
-                </div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-semibold text-foreground">
-                  Demo Video Coming Soon
-                </h3>
-                <p className="mt-2 text-sm text-muted-foreground max-w-md mx-auto">
-                  Screen recording demonstrating major features will be added here
-                </p>
-                <Button 
-                  className="mt-6 bg-[#22577A] dark:bg-[#80ED99] text-white dark:text-[#22577A] hover:bg-[#38A3A5] dark:hover:bg-[#57CC99]"
-                  disabled
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Watch Demo
-                </Button>
-              </div>
+            <div className="aspect-video w-full">
+              <video
+                className="h-full w-full object-cover"
+                controls
+                preload="none"
+              >
+                <source src="/demo-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </ScrollReveal>
@@ -69,8 +59,9 @@ export function DemoSection() {
                   Authentication Flow
                 </h4>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Simple and intuitive sign up and login process. Users can quickly 
-                  create an account or access their existing profile with minimal friction.
+                  Simple and intuitive sign up and login process. Users can
+                  quickly create an account or access their existing profile
+                  with minimal friction.
                 </p>
               </div>
             </ScrollReveal>
@@ -90,8 +81,9 @@ export function DemoSection() {
                   Profile & Statistics
                 </h4>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  View your listening history, top songs, audiobooks, and podcasts. 
-                  Upload your own audio files and track your listening time.
+                  View your listening history, top songs, audiobooks, and
+                  podcasts. Upload your own audio files and track your listening
+                  time.
                 </p>
               </div>
             </ScrollReveal>
@@ -102,13 +94,25 @@ export function DemoSection() {
         <ScrollReveal delay={300}>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "Browse Music", desc: "Explore tracks from various artists" },
-              { title: "Play & Control", desc: "Full playback controls with queue management" },
-              { title: "Upload Audio", desc: "Add your own music files to the library" },
-              { title: "Track Stats", desc: "View detailed listening statistics" }
+              {
+                title: "Browse Music",
+                desc: "Explore tracks from various artists",
+              },
+              {
+                title: "Play & Control",
+                desc: "Full playback controls with queue management",
+              },
+              {
+                title: "Upload Audio",
+                desc: "Add your own music files to the library",
+              },
+              {
+                title: "Track Stats",
+                desc: "View detailed listening statistics",
+              },
             ].map((item, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="rounded-xl bg-gradient-to-br from-[#22577A] to-[#38A3A5] p-5 text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <h4 className="font-[family-name:var(--font-heading)] font-semibold text-white">
@@ -121,5 +125,5 @@ export function DemoSection() {
         </ScrollReveal>
       </div>
     </section>
-  )
+  );
 }
