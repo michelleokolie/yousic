@@ -22,14 +22,16 @@ export function DemoSection() {
 
         {/* Video Section */}
         <ScrollReveal variant="zoom-in" delay={100}>
-          <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card">
-            <div className="aspect-video w-full">
+          <div className="mt-12 flex justify-center">
+            {/* Container adjusted for mobile aspect ratio */}
+            <div className="relative overflow-hidden rounded-[2rem] border-[8px] border-black bg-black shadow-2xl w-full max-w-[300px] aspect-[9/19.5]">
               <video
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain" // object-contain prevents zooming
                 controls
-                preload="none"
+                preload="metadata"
+                playsInline
               >
-                <source src="/yousic/demo.mp4" type="video/mp4" />
+                <source src="/yousic/demo-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
