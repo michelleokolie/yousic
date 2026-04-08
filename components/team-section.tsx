@@ -12,6 +12,7 @@ const teamMembers = [
       "Authored the project ReadMe and Iteration documentation",
       "Implemented Search functionality and Log-out logic",
       "Added the Logout logic and Logout confirmation UI",
+       "Recorded and maintained meeting minutes across all project sprints"
     ],
 
     skills: ["E2E Testing", "Integration Testing", "Technical Writing"],
@@ -55,7 +56,7 @@ const teamMembers = [
       "Developed the primary Now Playing UI and playback components",
       "Co-developed foundational logic and core user upload features",
       "Led team meetings and managed project reflection worksheets",
-      "Recorded meeting minutes and coordinated task distribution",       
+      "Coordinated task distribution and managed project timelines",     
     ],
     skills: ["HCI Design", "MediaPlayer API", "Project Coordination", "UI/UX"],
     icon: ClipboardCheck,
