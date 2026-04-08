@@ -45,7 +45,7 @@ export function HeroSection() {
                 </div>
                 <div className="flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-foreground">
                   <Users className="h-4 w-4 text-[#22577A] dark:text-[#80ED99]" />
-                  <span>Community</span>
+                  <span>Local Sharing</span>
                 </div>
               </div>
             </ScrollReveal>
