@@ -95,7 +95,7 @@ export function HeroSection() {
             <div className="relative flex justify-center gap-4 lg:justify-end">
               <div className="relative h-[480px] w-[230px] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-border transition-transform duration-300 hover:scale-[1.02]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t11OLgsfRHV9H1wcRowZEWWUKssYEw.png"
+                  src="/yousic/login.png"
                   alt="Yousic app login screen showing Sign Up and Log In buttons"
                   fill
                   className="object-cover"
@@ -103,7 +103,7 @@ export function HeroSection() {
               </div>
               <div className="relative hidden h-[480px] w-[230px] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-border sm:block transition-transform duration-300 hover:scale-[1.02]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8tHntaHaONPHgXX3PUW2BQeST0pX6S.png"
+                  src="/yousic/profile.png"
                   alt="Yousic app profile screen showing user listening statistics"
                   fill
                   className="object-cover"
