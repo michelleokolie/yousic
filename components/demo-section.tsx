@@ -23,10 +23,9 @@ export function DemoSection() {
         {/* Video Section */}
         <ScrollReveal variant="zoom-in" delay={100}>
           <div className="mt-12 flex justify-center">
-            {/* Removed the fixed border and aspect ratio that was causing the black bars */}
-            <div className="relative w-full max-w-[320px] shadow-2xl overflow-hidden rounded-[2.5rem]">
+            <div className="relative w-full max-w-[320px] shadow-2xl overflow-hidden rounded-[2.5rem] bg-transparent">
               <video
-                className="w-full h-auto block" // h-auto lets the video define its own shape
+                className="w-full h-auto block bg-black" // black bg fills any tiny sub-pixel gaps
                 controls
                 preload="metadata"
                 playsInline
@@ -48,47 +47,38 @@ export function DemoSection() {
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <ScrollReveal variant="fade-right" delay={100}>
               <div className="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-xl">
-                {/* Container adjusted to let the vertical image shine */}
-                <div className="mb-4 flex justify-center overflow-hidden rounded-xl bg-secondary/50 dark:bg-[#1a4057] p-4">
+                {/* Changed: Removed inner p-4, added flex and specific rounding */}
+                <div className="mb-6 flex justify-center overflow-hidden rounded-[2rem] bg-secondary/30 dark:bg-[#1a4057]">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t11OLgsfRHV9H1wcRowZEWWUKssYEw.png"
                     alt="Yousic login screen"
-                    width={280} // Specific width to keep it looking like a phone
-                    height={560}
-                    className="h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                    width={280}
+                    height={600}
+                    className="h-auto w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-foreground">
+                <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold">
                   Authentication Flow
                 </h4>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  Simple and intuitive sign up and login process. Users can
-                  quickly create an account or access their existing profile
-                  with minimal friction.
-                </p>
+                <p className="mt-2 text-sm text-muted-foreground">...</p>
               </div>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-left" delay={200}>
               <div className="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-xl">
-                {/* Matching container for the profile screen */}
-                <div className="mb-4 flex justify-center overflow-hidden rounded-xl bg-secondary/50 dark:bg-[#1a4057] p-4">
+                <div className="mb-6 flex justify-center overflow-hidden rounded-[2rem] bg-secondary/30 dark:bg-[#1a4057]">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8tHntaHaONPHgXX3PUW2BQeST0pX6S.png"
-                    alt="Yousic profile and statistics screen"
+                    alt="Yousic profile screen"
                     width={280}
-                    height={560}
-                    className="h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                    height={600}
+                    className="h-auto w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-foreground">
+                <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold">
                   Profile & Statistics
                 </h4>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  View your listening history, top songs, audiobooks, and
-                  podcasts. Upload your own audio files and track your listening
-                  time.
-                </p>
+                <p className="mt-2 text-sm text-muted-foreground">...</p>
               </div>
             </ScrollReveal>
           </div>
