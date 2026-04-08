@@ -50,7 +50,7 @@ export function DemoSection() {
                 {/* Changed: Removed inner p-4, added flex and specific rounding */}
                 <div className="mb-6 flex justify-center overflow-hidden rounded-[2rem] bg-secondary/30 dark:bg-[#1a4057]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t11OLgsfRHV9H1wcRowZEWWUKssYEw.png"
+                    src="/yousic/login.png"
                     alt="Yousic login screen"
                     width={280}
                     height={600}
@@ -73,7 +73,7 @@ export function DemoSection() {
               <div className="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-xl">
                 <div className="mb-6 flex justify-center overflow-hidden rounded-[2rem] bg-secondary/30 dark:bg-[#1a4057]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8tHntaHaONPHgXX3PUW2BQeST0pX6S.png"
+                    src="/yousic/profile.png"
                     alt="Yousic profile screen"
                     width={280}
                     height={600}
