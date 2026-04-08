@@ -23,10 +23,10 @@ export function DemoSection() {
         {/* Video Section */}
         <ScrollReveal variant="zoom-in" delay={100}>
           <div className="mt-12 flex justify-center">
-            {/* Container adjusted for mobile aspect ratio */}
-            <div className="relative overflow-hidden rounded-[2rem] border-[8px] border-black bg-black shadow-2xl w-full max-w-[300px] aspect-[9/19.5]">
+            {/* Removed the fixed border and aspect ratio that was causing the black bars */}
+            <div className="relative w-full max-w-[320px] shadow-2xl overflow-hidden rounded-[2.5rem]">
               <video
-                className="h-full w-full object-contain" // object-contain prevents zooming
+                className="w-full h-auto block" // h-auto lets the video define its own shape
                 controls
                 preload="metadata"
                 playsInline
@@ -48,13 +48,14 @@ export function DemoSection() {
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <ScrollReveal variant="fade-right" delay={100}>
               <div className="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-xl">
-                <div className="mb-4 overflow-hidden rounded-xl bg-secondary/50 dark:bg-[#1a4057] p-4">
+                {/* Container adjusted to let the vertical image shine */}
+                <div className="mb-4 flex justify-center overflow-hidden rounded-xl bg-secondary/50 dark:bg-[#1a4057] p-4">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t11OLgsfRHV9H1wcRowZEWWUKssYEw.png"
                     alt="Yousic login screen"
-                    width={300}
-                    height={600}
-                    className="mx-auto h-72 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                    width={280} // Specific width to keep it looking like a phone
+                    height={560}
+                    className="h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-foreground">
@@ -70,13 +71,14 @@ export function DemoSection() {
 
             <ScrollReveal variant="fade-left" delay={200}>
               <div className="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-xl">
-                <div className="mb-4 overflow-hidden rounded-xl bg-secondary/50 dark:bg-[#1a4057] p-4">
+                {/* Matching container for the profile screen */}
+                <div className="mb-4 flex justify-center overflow-hidden rounded-xl bg-secondary/50 dark:bg-[#1a4057] p-4">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8tHntaHaONPHgXX3PUW2BQeST0pX6S.png"
                     alt="Yousic profile and statistics screen"
-                    width={300}
-                    height={600}
-                    className="mx-auto h-72 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                    width={280}
+                    height={560}
+                    className="h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-foreground">
