@@ -46,8 +46,8 @@ const features = [
   },
   {
     icon: Heart,
-    title: "Community Sharing",
-    description: "Uploaded audios are available to any music fan, increasing the number of accessible media for everyone."
+    title: "Local Sharing",
+    description: "Share your uploaded audio across all accounts on your device, no internet required."
   },
   {
     icon: Music,
