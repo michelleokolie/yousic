@@ -60,7 +60,12 @@ export function DemoSection() {
                 <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold">
                   Authentication Flow
                 </h4>
-                <p className="mt-2 text-sm text-muted-foreground">...</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {" "}
+                  Simple and intuitive sign up and login process. Users can
+                  quickly create an account or access their existing profile
+                  with minimal friction.
+                </p>
               </div>
             </ScrollReveal>
 
@@ -78,7 +83,11 @@ export function DemoSection() {
                 <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold">
                   Profile & Statistics
                 </h4>
-                <p className="mt-2 text-sm text-muted-foreground">...</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  View your listening history, top songs, audiobooks, and
+                  podcasts. Upload your own audio files and track your listening
+                  time.
+                </p>
               </div>
             </ScrollReveal>
           </div>
